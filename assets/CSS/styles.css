@@ -1,20 +1,35 @@
 /* fonts */
 @font-face {
-    src: url('/assets/FONT/Starjedi.ttf');
+    src: url('/assets/FONT/STARWARS.TTF');
     font-family: 'Star-Wars';
 }
 
+@font-face {font-family:"STARWARS";src:url("STARWARS.eot?") format("eot"),url("STARWARS.woff") format("woff"),url("STARWARS.ttf") format("truetype"),url("STARWARS.svg#STARWARS") format("svg");font-weight:normal;font-style:normal;}
+
+
 body {
-    background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600");
+    background-image: url("/assets/IMG/bg-satr.jpeg");
     background-repeat: repeat;
     min-height: 100vh;
+}
+
+.title {
+    font-family: 'Star-Wars';
+    font-size: 40px;
+
+    color: rgb(233, 248, 244);
+}
+
+.parrafo {
+    font-size: 24px;
+    color: rgb(0, 255, 221);
 }
 
 
 .navStatic {
     width: 100%;
     height: 120px;
-    background-color: #030303;
+    background-color: #0c0303;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +39,8 @@ body {
 h1 {
     font-family: 'Star-Wars';
     font-size: 50px;
+    color:black;
+    -webkit-text-stroke: 2px #FFEC2D;
 }
 
 p, h4, h3 {
@@ -36,7 +53,51 @@ p, h4, h3 {
     width: 400px;
     color: white;
     margin-left: 50px;
+    border: 0.5px solid white;
 }
+
+.cardInfo {
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    background-color: #00272d;
+    color:white;
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top:auto;
+    margin-bottom:auto;
+    border: 0.5px solid white;
+}
+
+.namePj {
+    font-family: 'Star-Wars';
+    font-size: 26px;
+    color:#FFEC2D;
+}
+
+.infoPj {
+    font-family: 'Helvetica';
+    font-size: 12px;
+    margin-top:10px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.infoPj2 {
+    font-family: 'Helvetica';
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top:0px;
+}
+
+
+
 
 .one {
     background-color: #00272d;
